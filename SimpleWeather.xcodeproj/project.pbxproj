@@ -47,6 +47,10 @@
 		59BEDF37194563C500F53B03 /* weather-snow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59BEDF1D194563C500F53B03 /* weather-snow@2x.png */; };
 		59BEDF38194563C500F53B03 /* weather-tstorm.png in Resources */ = {isa = PBXBuildFile; fileRef = 59BEDF1E194563C500F53B03 /* weather-tstorm.png */; };
 		59BEDF39194563C500F53B03 /* weather-tstorm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59BEDF1F194563C500F53B03 /* weather-tstorm@2x.png */; };
+		59BEDF3C1946EAA900F53B03 /* WXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEDF3B1946EAA900F53B03 /* WXClient.m */; };
+		59BEDF3F1946EB1000F53B03 /* WXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEDF3E1946EB1000F53B03 /* WXManager.m */; };
+		59BEDF421946EB4100F53B03 /* WXCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEDF411946EB4100F53B03 /* WXCondition.m */; };
+		59BEDF451946EB7E00F53B03 /* WXDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEDF441946EB7E00F53B03 /* WXDailyForecast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,14 @@
 		59BEDF1D194563C500F53B03 /* weather-snow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-snow@2x.png"; sourceTree = "<group>"; };
 		59BEDF1E194563C500F53B03 /* weather-tstorm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm.png"; sourceTree = "<group>"; };
 		59BEDF1F194563C500F53B03 /* weather-tstorm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-tstorm@2x.png"; sourceTree = "<group>"; };
+		59BEDF3A1946EAA900F53B03 /* WXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXClient.h; sourceTree = "<group>"; };
+		59BEDF3B1946EAA900F53B03 /* WXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXClient.m; sourceTree = "<group>"; };
+		59BEDF3D1946EB1000F53B03 /* WXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXManager.h; sourceTree = "<group>"; };
+		59BEDF3E1946EB1000F53B03 /* WXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXManager.m; sourceTree = "<group>"; };
+		59BEDF401946EB4100F53B03 /* WXCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCondition.h; sourceTree = "<group>"; };
+		59BEDF411946EB4100F53B03 /* WXCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCondition.m; sourceTree = "<group>"; };
+		59BEDF431946EB7E00F53B03 /* WXDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDailyForecast.h; sourceTree = "<group>"; };
+		59BEDF441946EB7E00F53B03 /* WXDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDailyForecast.m; sourceTree = "<group>"; };
 		D3AA7E18A79C47618F5B18A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +187,14 @@
 				59BEDED91945499600F53B03 /* Supporting Files */,
 				59BEDF0119455A5F00F53B03 /* WXController.h */,
 				59BEDF0219455A5F00F53B03 /* WXController.m */,
+				59BEDF3A1946EAA900F53B03 /* WXClient.h */,
+				59BEDF3B1946EAA900F53B03 /* WXClient.m */,
+				59BEDF3D1946EB1000F53B03 /* WXManager.h */,
+				59BEDF3E1946EB1000F53B03 /* WXManager.m */,
+				59BEDF401946EB4100F53B03 /* WXCondition.h */,
+				59BEDF411946EB4100F53B03 /* WXCondition.m */,
+				59BEDF431946EB7E00F53B03 /* WXDailyForecast.h */,
+				59BEDF441946EB7E00F53B03 /* WXDailyForecast.m */,
 			);
 			path = SimpleWeather;
 			sourceTree = "<group>";
@@ -405,9 +425,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59BEDF3F1946EB1000F53B03 /* WXManager.m in Sources */,
+				59BEDF451946EB7E00F53B03 /* WXDailyForecast.m in Sources */,
 				59BEDEE31945499600F53B03 /* AppDelegate.m in Sources */,
 				59BEDEDF1945499600F53B03 /* main.m in Sources */,
 				59BEDF0319455A5F00F53B03 /* WXController.m in Sources */,
+				59BEDF421946EB4100F53B03 /* WXCondition.m in Sources */,
+				59BEDF3C1946EAA900F53B03 /* WXClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
